@@ -1,16 +1,9 @@
-import { useState } from "react"
-import { PageHeader } from "./layouts/PageHeader"
-import styles from "./App.module.css"
+import { PageHeader } from './layouts/PageHeader'
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <div className={styles.App}>
+    <div className='max-h-screen flex flex-col'>
       <PageHeader />
     </div>
-  );
+  )
 }
-
-export default App;
