@@ -1,4 +1,4 @@
-export const slides = [
+export const images: object[] = [
   {
     src: 'https://drscdn.500px.org/photo/1099557302/q%3D90_m%3D1024/v2?sig=4d576a41c2523838da7dfea640c3e2b2143973b7309ecde6fd1ce19acdb42ee5',
     title: 'Just a Look',

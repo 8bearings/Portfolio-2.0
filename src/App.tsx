@@ -1,18 +1,21 @@
-import { useState } from 'react'
-import { PageHeader } from './layouts/PageHeader'
-import Lightbox from 'yet-another-react-lightbox'
-import { slides } from './data'
+import React from 'react';
+import Navbar from './Components/Navbar';
+import Gallery from './Components/Gallery';
+import Footer from './Components/Footer';
+import { images } from './data';
+import { Images } from './Components/Image';
 
-export default function App() {
-  const [open, setOpen] = useState<boolean>(false)
-
+const App: React.FC = () => {
+  const handleClick = (image: Images) => {
+    console.log(`Image clicked: ${image.title}`)
+  }
   return (
-    <div className='max-h-screen flex flex-col'>
-      <PageHeader />
-
-      <button onClick={() => setOpen(true)}>Open Light Box</button>
-
-      <Lightbox open={open} slides={slides} />
+    <div className="app">
+      <Navbar />
+      <Gallery images={images as Images[]} onClick={handleClick} />
+      <Footer />
     </div>
-  )
-}
+  );
+};
+
+export default App;

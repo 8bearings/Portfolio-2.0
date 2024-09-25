@@ -8,3 +8,25 @@
   padding: 0;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.gallery, .footer{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer{
+  min-height: 25px;
+  background: rgb(232, 232, 232);
+}
+
+
